@@ -1,5 +1,5 @@
 header {
-  .flex(space-around, flex-start, row-reverse);
+  .flex(space-between, baseline, row);
   background-color: @main-bg;
   background-image: url("/imgs/assets/background.jpg");
   height: 500px;
@@ -8,11 +8,11 @@ header {
   background-size:cover;
   ul {
     display: none;
-    a {
-      color: @white;
-    }
   }
   .btn {
     display: none;
+  }
+  h1{
+    color: @white;
   }
 }

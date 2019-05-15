@@ -126,17 +126,50 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-  background-image: url('/imgs/background.jpg');
-  background-size: 100%;
-  color: white;
+* {
+  box-sizing: border-box;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  padding-top: 4rem;
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Cambria', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Optima', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+a {
+  font-size: 1.6rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 nav {
   display: flex;

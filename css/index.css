@@ -167,14 +167,13 @@ img {
   height: auto;
 }
 .wrapper {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 header {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row-reverse;
   background-color: #fefeff;
   background-image: url("/imgs/assets/background.jpg");
@@ -186,8 +185,8 @@ header {
 header ul {
   display: none;
 }
-header ul li a {
-  color: white;
+header ul a {
+  color: #fefeff;
 }
 header .btn {
   display: none;

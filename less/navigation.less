@@ -1,18 +1,16 @@
 header {
-  .flex(space-around, flex-start, row-reverse);
-  background-color: @main-bg;
-  background-image: url("/imgs/assets/background.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+  .flex(space-between, baseline, row);
+  img{
+    position:fixed;
+    margin: 12px;
+  }
   ul {
     display: none;
-    a {
-      color: @white;
-    }
   }
   .btn {
     display: none;
+  }
+  h1{
+    color: @white;
   }
 }

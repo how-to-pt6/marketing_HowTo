@@ -127,6 +127,5 @@ table {
   border-spacing: 0;
 }
 .card img {
-  width: 20%;
-  height: auto;
+  display: hidden;
 }

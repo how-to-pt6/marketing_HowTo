@@ -158,6 +158,23 @@ nav ul a {
   color: #5191ff;
   font-size: 1.5rem;
 }
+nav ul a:hover {
+  text-decoration: underline;
+}
+nav button {
+  box-sizing: border-box;
+  width: 5.3rem;
+  height: 1.6rem;
+  text-decoration: none;
+  margin: 0.15rem;
+  color: black;
+  border-radius: 0.4rem;
+  background-color: #efd67c;
+}
+nav button :hover {
+  font-size: 1rem;
+  font-weight: bold;
+}
 .card img {
   width: 20%;
   height: auto;

@@ -165,15 +165,17 @@ nav button {
   box-sizing: border-box;
   width: 5.3rem;
   height: 1.6rem;
-  text-decoration: none;
   margin: 0.15rem;
-  color: black;
   border-radius: 0.4rem;
   background-color: #efd67c;
 }
 nav button :hover {
   font-size: 1rem;
   font-weight: bold;
+}
+nav button a {
+  text-decoration: none;
+  color: black;
 }
 .card img {
   width: 20%;

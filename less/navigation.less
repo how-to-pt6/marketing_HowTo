@@ -1,0 +1,32 @@
+nav {
+    .flex(space-evenly,center,row);
+    background-color: rgba(207, 92, 54, 0.8);
+    padding: 1rem;
+
+    ul {
+        width: 90%;
+        .flex(space-evenly,center,row);
+
+        a {
+            text-decoration: none;
+            color: @lightblue;
+            font-size: 1.5rem;
+        }
+
+        a:hover {text-decoration: underline;}
+    }
+
+    button {
+        box-sizing: border-box;
+        width: 5.3rem;
+        height: 1.6rem;
+        margin: .15rem;
+        border-radius: .4rem;
+        background-color: @yellow;
+        :hover {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        a {text-decoration: none; color: black;}
+    }
+}

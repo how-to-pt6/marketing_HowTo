@@ -167,6 +167,12 @@ img {
   height: auto;
 }
 .wrapper {
+  background-color: #fefeff;
+  background-image: url("/imgs/assets/background.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: device-width;
   margin: 0 auto;
 }
@@ -178,12 +184,10 @@ header {
   justify-content: space-between;
   align-items: baseline;
   flex-flow: row;
-  background-color: #fefeff;
-  background-image: url("/imgs/assets/background.jpg");
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+header img {
+  position: fixed;
+  margin: 12px;
 }
 header ul {
   display: none;

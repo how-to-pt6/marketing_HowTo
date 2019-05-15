@@ -135,9 +135,9 @@ body {
   width: 20%;
   height: auto;
   background: white;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
-#searchIcon {
+#icon {
   width: 4%;
   height: auto;
 }

@@ -1,0 +1,57 @@
+.about nav {
+    .flex(space-between,center,row);
+}
+
+.about nav img {
+    width: auto;
+    height: 5rem;
+}
+
+
+
+// Drop down Nav Menu *********
+li {
+    display: block;
+    transition-duration: 0.5s;
+    :hover {cursor: pointer;}
+    background-color: @lightblue;
+    width: 5.5rem;
+    padding: 0 .7rem;
+    margin: .4rem 0;
+    height: auto;
+    
+}
+
+.dropDown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    margin-top: 0rem;
+    right: 0;
+    display: none;
+    width: auto;
+}
+
+.navMenu:hover > ul,
+.navMenu:focus-within > ul,
+.dropDown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.dropDown li {
+    clear: both;
+    width: 11rem;
+    height: 2rem;
+    padding: .25rem;
+    a {
+        text-decoration: none;
+        color: @white;
+    }
+    :hover {
+        background-color: @white;
+        color: @lightblue;
+    }
+}

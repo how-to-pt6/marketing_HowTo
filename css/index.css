@@ -167,7 +167,7 @@ img {
   height: auto;
 }
 .wrapper {
-  background-color: #fefeff;
+  background-color: whitesmoke;
   background-image: url("/imgs/assets/background.jpg");
   height: 450px;
   background-position: center;
@@ -196,15 +196,21 @@ header .btn {
   display: none;
 }
 header h1 {
-  color: #fefeff;
+  color: whitesmoke;
 }
-.card img {
-  width: 20%;
-  height: auto;
-  background: white;
-  border-radius: 0.6rem;
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-#icon {
-  width: 4%;
+.features .cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row wrap;
+}
+.features .cards .card {
+  width: 90%;
   height: auto;
 }

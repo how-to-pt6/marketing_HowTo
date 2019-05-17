@@ -179,56 +179,142 @@ img {
 .main {
   max-width: 800px;
 }
-header {
+.indexNav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-flow: row;
+  margin: 1rem;
 }
-header img {
-  position: fixed;
-  margin: 12px;
-}
-header ul {
-  display: none;
-}
-header .btn {
-  display: none;
-}
-header h1 {
+h1 {
   color: whitesmoke;
+}
+.navCTAButton {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: 1px groove #593B2A;
+  padding: 0.75rem;
+  background: #89BAD9;
+}
+.navCTAButton a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navCTAButton :hover {
+  font-weight: bold;
+}
+.indexNavMenu {
+  display: block;
+  transition-duration: 0.5s;
+  background-color: #89BAD9;
+  width: 5.5rem;
+  padding: 0 0.7rem;
+  margin: 0.4rem 0;
+  height: auto;
+  border-radius: 3px;
+  border: 1px groove #593B2A;
+}
+.indexNavMenu :hover {
+  cursor: pointer;
+}
+.indexDropDown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0rem;
+  left: 0.31rem;
+  display: none;
+  width: auto;
+}
+.indexNavMenu:hover > ul,
+.indexNavMenu:focus-within > ul,
+.indexDropDown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.indexDropDown li {
+  clear: both;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0.25rem;
+  padding-bottom: 2rem;
+  background: #89BAD9;
+  border-radius: 4px;
+  margin: 0.5rem;
+  border: 1px solid #593B2A;
+}
+.indexDropDown li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.indexDropDown li :hover {
+  color: #89BAD9;
+}
+.indexDropDown li:hover {
+  background: whitesmoke;
 }
 .about nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
+  margin-right: 1.55rem;
 }
-.about nav img {
+.logo {
   width: auto;
-  height: 5rem;
+  height: 11rem;
+  padding-top: 0.7rem;
 }
 .about nav button {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 3.5rem;
   border-radius: 5px;
-  border-style: groove;
+  border: 1px groove #593B2A;
   padding: 0.75rem;
-  background: #5191ff;
+  margin-right: 2rem;
+  background: #89BAD9;
 }
 .about nav button a {
   text-decoration: none;
-  color: #fefeff;
+  color: whitesmoke;
 }
-li {
+.about nav button :hover {
+  font-weight: bold;
+}
+.about {
+  height: 28rem;
+}
+.mainAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.mainAbout h1 {
+  height: 20rem;
+  margin-top: 20rem;
+}
+.navMenu {
   display: block;
   transition-duration: 0.5s;
-  background-color: #5191ff;
+  background-color: #89BAD9;
   width: 5.5rem;
   padding: 0 0.7rem;
   margin: 0.4rem 0;
   height: auto;
   border-radius: 3px;
+  border: 1px groove #593B2A;
 }
-li :hover {
+.navMenu :hover {
   cursor: pointer;
 }
 .dropDown {
@@ -237,7 +323,7 @@ li :hover {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 0rem;
-  right: 0;
+  right: 0.8rem;
   display: none;
   width: auto;
 }
@@ -246,27 +332,44 @@ li :hover {
 .dropDown:hover {
   visibility: visible;
   opacity: 1;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 .dropDown li {
   clear: both;
-  width: 11rem;
+  width: 6rem;
   height: 2rem;
+  text-align: center;
   padding: 0.25rem;
+  padding-bottom: 2rem;
+  background: #89BAD9;
+  border-radius: 4px;
+  margin: 0.5rem;
+  border: 1px solid #593B2A;
 }
 .dropDown li a {
   text-decoration: none;
-  color: #fefeff;
+  color: whitesmoke;
 }
 .dropDown li :hover {
-  background-color: #fefeff;
-  color: #5191ff;
+  color: #89BAD9;
 }
-.card img {
-  width: 20%;
-  height: auto;
-  background: white;
-  border-radius: 0.6rem;
+.dropDown li:hover {
+  background: whitesmoke;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features .cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row wrap;
 }
 .features .cards .card {
   width: 90%;

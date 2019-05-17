@@ -227,6 +227,19 @@ header h1 {
 .about nav button :hover {
   font-weight: bold;
 }
+.about {
+  height: 28rem;
+}
+.mainAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.mainAbout h1 {
+  height: 20rem;
+  margin-top: 20rem;
+}
 .navMenu {
   display: block;
   transition-duration: 0.5s;

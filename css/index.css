@@ -167,9 +167,9 @@ img {
   height: auto;
 }
 .wrapper {
-  background-color: #fefeff;
+  background-color: whitesmoke;
   background-image: url("/imgs/assets/background.jpg");
-  height: 500px;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,7 +196,7 @@ header .btn {
   display: none;
 }
 header h1 {
-  color: #fefeff;
+  color: whitesmoke;
 }
 .about nav {
   display: flex;
@@ -268,7 +268,7 @@ li :hover {
   background: white;
   border-radius: 0.6rem;
 }
-#icon {
-  width: 4%;
+.features .cards .card {
+  width: 90%;
   height: auto;
 }

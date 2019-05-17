@@ -10,18 +10,22 @@
 }
 
 .about nav button {
+    box-sizing: border-box;
+    width: 10rem;
+    height: 3.5rem;
     border-radius: 5px;
     border: 1px groove @darkbrown;
     padding: .75rem;
     margin-right: 2rem;
     background: @lightblue;
     a {
-        width: auto;
-        height: auto;
         text-decoration: none;
         color: whitesmoke;
     }
-    :hover {color: @red;}
+    :hover {
+        font-weight: bold;
+    }
+    
 }
 
 // Drop down Nav Menu *********

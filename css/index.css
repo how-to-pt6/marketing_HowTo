@@ -211,6 +211,9 @@ header h1 {
   padding-top: 0.7rem;
 }
 .about nav button {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 3.5rem;
   border-radius: 5px;
   border: 1px groove #593B2A;
   padding: 0.75rem;
@@ -218,13 +221,11 @@ header h1 {
   background: #89BAD9;
 }
 .about nav button a {
-  width: auto;
-  height: auto;
   text-decoration: none;
   color: whitesmoke;
 }
 .about nav button :hover {
-  color: #D95555;
+  font-weight: bold;
 }
 .navMenu {
   display: block;

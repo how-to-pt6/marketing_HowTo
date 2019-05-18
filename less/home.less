@@ -1,75 +1,91 @@
 .wrapper.home {
   .cta {
     .flex(center, center, column);
-  }
-  .cta-btn {
-    margin-top: 10px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border: 1px solid @darkbrown;
-    border-radius: 8px;
-    background: @orange;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#fca356),
-      to(#996335)
-    );
-    background: -moz-linear-gradient(top, #fca356, #996335);
-    background: linear-gradient(to bottom, #fca356, #996335);
-    a {
-      text-decoration: none;
-      color: whitesmoke;
-      text-shadow: @darkbrown 1px 1px 1px;
-      font-size: 2.5rem;
+    @media@desktop {
+      .flex(space-around, base-line, row-reverse);
     }
+    .cta-text {
+      h1 {
+        color: @darkbrown;
+        text-shadow:none;
+      }
+      .flex(center, center, column);
+      .cta-btn {
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 1px solid @darkbrown;
+        border-radius: 8px;
+        background: @orange;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#fca356),
+          to(#996335)
+        );
+        background: -moz-linear-gradient(top, #fca356, #996335);
+        background: linear-gradient(to bottom, #fca356, #996335);
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          text-shadow: @darkbrown 1px 1px 1px;
+          font-size: 2.5rem;
+        }
 
-    &:hover,
-    &:focus {
-      border: 1px solid #db8e4b;
-      background: #ffc467;
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#ffc467),
-        to(#b87740)
-      );
-      background: -moz-linear-gradient(top, #ffc467, #b87740);
-      background: linear-gradient(to bottom, #ffc467, #b87740);
-    }
-    &:active {
-      background: #996335;
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#996335),
-        to(#996335)
-      );
-      background: -moz-linear-gradient(top, #996335, #996335);
-      background: linear-gradient(to bottom, #996335, #996335);
-    }
-  }
-  .product {
-    h3 {
-      margin-top: 50px;
-      color: @darkbrown;
-      text-shadow: none;
+        &:hover,
+        &:focus {
+          border: 1px solid #db8e4b;
+          background: #ffc467;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#ffc467),
+            to(#b87740)
+          );
+          background: -moz-linear-gradient(top, #ffc467, #b87740);
+          background: linear-gradient(to bottom, #ffc467, #b87740);
+        }
+        &:active {
+          background: #996335;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#996335),
+            to(#996335)
+          );
+          background: -moz-linear-gradient(top, #996335, #996335);
+          background: linear-gradient(to bottom, #996335, #996335);
+        }
+      }
     }
   }
-  .mobile {
-    @media @desktop {
+  .main {
+    @media@desktop {
+      background-color: whitesmoke;
+    }
+    .product {
+      padding:0 5%;
+      h3 {
+        margin-top: 50px;
+        color: @darkbrown;
+        text-shadow: none;
+      }
+    }
+    .mobile {
+      @media @desktop {
+        display: none;
+      }
+    }
+    .desktop {
       display: none;
-    }
-  }
-  .desktop {
-    display: none;
-    @media @desktop {
-      display: flex;
+      @media @desktop {
+        display: flex;
+      }
     }
   }
 }

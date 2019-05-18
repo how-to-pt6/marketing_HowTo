@@ -419,6 +419,15 @@ img {
   padding: 2rem 0;
   max-width: 400px;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  padding: 2rem;
+  width: 100%;
+  background-color: #89bad9;
+}
 .navMenu {
   display: block;
   padding-bottom: 10rem;

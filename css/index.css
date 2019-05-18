@@ -404,7 +404,7 @@ img {
 }
 .navMenu {
   display: block;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
   transition-duration: 0.5s;
   background-color: #89bad9;
   width: 5.5rem;
@@ -417,6 +417,10 @@ img {
 }
 .navMenu :hover {
   cursor: pointer;
+}
+.menuContainer {
+  height: 5rem;
+  width: 5rem;
 }
 .dropDown {
   visibility: hidden;

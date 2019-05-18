@@ -76,7 +76,7 @@
 // Drop down Nav Menu *********
 .navMenu {
     display: block;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
     transition-duration: 0.5s;
     :hover {cursor: pointer;}
     background-color: @lightblue;
@@ -86,10 +86,12 @@
     border-radius: 3px;
     border: 1px groove @darkbrown;
     position: absolute;
-    left: 4%;
-    
+    left: 4%;    
 }
-
+.menuContainer {
+    height: 5rem;
+    width: 5rem;
+}
 .dropDown {
     visibility: hidden;
     opacity: 0;

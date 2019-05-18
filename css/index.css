@@ -142,6 +142,8 @@ h3,
 h4,
 h5 {
   font-family: 'Optima', sans-serif;
+  color: whitesmoke;
+  text-shadow: #593B2A 2px 2px 2px;
 }
 h1 {
   font-size: 4rem;
@@ -150,7 +152,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
@@ -167,14 +172,14 @@ img {
   height: auto;
 }
 .wrapper {
-  background-color: whitesmoke;
+  background-color: #A6806A;
   background-image: url("/imgs/assets/background.jpg");
   height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: device-width;
   margin: 0 auto;
+  padding: 3%;
 }
 .main {
   max-width: 800px;
@@ -184,26 +189,27 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  margin: 1rem;
 }
-h1 {
-  color: whitesmoke;
+.indexNav .navCTAButton {
+  display: none;
 }
-.navCTAButton {
-  box-sizing: border-box;
-  width: 10rem;
-  height: 3.5rem;
-  border-radius: 5px;
-  border: 1px groove #593B2A;
-  padding: 0.75rem;
-  background: #89BAD9;
-}
-.navCTAButton a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.navCTAButton :hover {
-  font-weight: bold;
+@media (min-width: 800px) {
+  .indexNav .navCTAButton {
+    display: block;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    border: 1px groove #593B2A;
+    padding: 0.75rem;
+    background: #89BAD9;
+  }
+  .indexNav .navCTAButton a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .indexNav .navCTAButton:hover {
+    font-weight: bold;
+  }
 }
 .indexNavMenu {
   display: block;
@@ -216,10 +222,10 @@ h1 {
   border-radius: 3px;
   border: 1px groove #593B2A;
 }
-.indexNavMenu :hover {
+.indexNavMenu:hover {
   cursor: pointer;
 }
-.indexDropDown {
+.indexNavMenu .indexDropDown {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -255,11 +261,62 @@ h1 {
   text-decoration: none;
   color: whitesmoke;
 }
-.indexDropDown li :hover {
+.indexDropDown li a:hover {
   color: #89BAD9;
 }
 .indexDropDown li:hover {
   background: whitesmoke;
+}
+@media (min-width: 800px) {
+  .wrapper.home .mobile {
+    display: none;
+  }
+}
+.wrapper.home .desktop {
+  display: none;
+}
+@media (min-width: 800px) {
+  .wrapper.home .desktop {
+    display: block;
+  }
+}
+.wrapper.home .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.wrapper.home .cta-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #593B2A;
+  border-radius: 8px;
+  background: #D98B48;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fca356), to(#996335));
+  background: -moz-linear-gradient(top, #fca356, #996335);
+  background: linear-gradient(to bottom, #fca356, #996335);
+}
+.wrapper.home .cta-btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: #593B2A 1px 1px 1px;
+  font-size: 2.5rem;
+}
+.wrapper.home .cta-btn:hover,
+.wrapper.home .cta-btn:focus {
+  border: 1px solid #db8e4b;
+  background: #ffc467;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc467), to(#b87740));
+  background: -moz-linear-gradient(top, #ffc467, #b87740);
+  background: linear-gradient(to bottom, #ffc467, #b87740);
+}
+.wrapper.home .cta-btn:active {
+  background: #996335;
+  background: -webkit-gradient(linear, left top, left bottom, from(#996335), to(#996335));
+  background: -moz-linear-gradient(top, #996335, #996335);
+  background: linear-gradient(to bottom, #996335, #996335);
 }
 .about nav {
   display: flex;
@@ -268,7 +325,7 @@ h1 {
   flex-flow: row;
   margin-right: 1.55rem;
 }
-.logo {
+.about .logo {
   width: auto;
   height: 11rem;
   padding-top: 0.7rem;

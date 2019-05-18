@@ -201,7 +201,7 @@ img {
     border-radius: 5px;
     border: 1px groove #593B2A;
     padding: 0.75rem;
-    background: #89BAD9;
+    background: #89bad9;
   }
   .indexNav .navCTAButton a {
     text-decoration: none;
@@ -214,7 +214,7 @@ img {
 .indexNavMenu {
   display: block;
   transition-duration: 0.5s;
-  background-color: #89BAD9;
+  background-color: #89bad9;
   width: 5.5rem;
   padding: 0 0.7rem;
   margin: 0.4rem 0;
@@ -231,7 +231,7 @@ img {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 0rem;
-  left: 0.31rem;
+  left: 0.65rem;
   display: none;
   width: auto;
 }
@@ -252,7 +252,7 @@ img {
   text-align: center;
   padding: 0.25rem;
   padding-bottom: 2rem;
-  background: #89BAD9;
+  background: #89bad9;
   border-radius: 4px;
   margin: 0.5rem;
   border: 1px solid #593B2A;
@@ -262,7 +262,7 @@ img {
   color: whitesmoke;
 }
 .indexDropDown li a:hover {
-  color: #89BAD9;
+  color: #89bad9;
 }
 .indexDropDown li:hover {
   background: whitesmoke;
@@ -323,7 +323,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  margin-left: 1.55rem;
+  margin-left: 0rem;
   padding-top: 2rem;
 }
 .about .logo {
@@ -331,15 +331,20 @@ img {
   height: 11rem;
   padding-top: 0.7rem;
 }
+.aboutPromo {
+  padding: 0.5rem;
+  font-weight: bolder;
+}
 .about nav button {
+  display: none;
   box-sizing: border-box;
   width: 10rem;
   height: 3.5rem;
   border-radius: 5px;
   border: 1px groove #593B2A;
   padding: 0.75rem;
-  margin-right: 2rem;
-  background: #89BAD9;
+  margin-right: 0rem;
+  background: #89bad9;
 }
 .about nav button a {
   text-decoration: none;
@@ -379,7 +384,7 @@ img {
 .navMenu {
   display: block;
   transition-duration: 0.5s;
-  background-color: #89BAD9;
+  background-color: #89bad9;
   width: 5.5rem;
   padding: 0 0.7rem;
   margin: 0.4rem 0;
@@ -396,7 +401,7 @@ img {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 0rem;
-  left: 0.8rem;
+  left: 0.65rem;
   display: none;
   width: auto;
 }
@@ -417,7 +422,7 @@ img {
   text-align: center;
   padding: 0.25rem;
   padding-bottom: 2rem;
-  background: #89BAD9;
+  background: #89bad9;
   border-radius: 4px;
   margin: 0.5rem;
   border: 1px solid #593B2A;
@@ -427,7 +432,7 @@ img {
   color: whitesmoke;
 }
 .dropDown li :hover {
-  color: #89BAD9;
+  color: #89bad9;
 }
 .dropDown li:hover {
   background: whitesmoke;

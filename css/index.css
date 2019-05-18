@@ -377,8 +377,7 @@ img {
   margin: 4rem;
   margin-top: 0;
   margin-bottom: 8rem;
-  max-height: 900vw
-    border: 2px solid black;
+  max-height: 900vw;
   display: flex;
   justify-content: center;
   align-items: center;

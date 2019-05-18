@@ -1,19 +1,9 @@
 .wrapper.home {
-  .mobile {
-    @media @desktop {
-      display: none;
-    }
+  .cta {
+    .flex(center, center, column);
   }
-  .desktop {
-    display: none;
-    @media @desktop {
-      display: block;
-    }
-  }
-.cta{
-  .flex(center,center,column);
-}
   .cta-btn {
+    margin-top: 10px;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -62,6 +52,13 @@
       );
       background: -moz-linear-gradient(top, #996335, #996335);
       background: linear-gradient(to bottom, #996335, #996335);
+    }
+  }
+  .product{
+    h3{
+      margin-top:50px;
+      color:@darkbrown;
+      text-shadow: none;
     }
   }
 }

@@ -31,7 +31,7 @@
     }
     :hover {
         font-weight: bold;
-    }  
+    }
 }
 
 .about {
@@ -56,20 +56,40 @@
 .member {
     margin: 4rem;
     margin-top: 0;
+    margin-bottom: 8rem;
+    max-height: 900vw
+    border: 2px solid black;
     .flex(center,center,column);
     .portrait {
+        max-width: 38rem;
         border: 1px solid whitesmoke;
         border-radius: 8px;
         box-shadow: 5px 5px 15px 6px rgb(51, 51, 51)
     }
-    ul {.flex(space-between,center,row);}
+    ul {
+        .flex(space-between,center,row);
+        max-width: 34rem;
+    }
     li {padding-left: 12.9%;}
     a img{
         width: 40%;
+        
     }
+    a img:hover {
+            opacity: .5;
+        }
     h2 {
         position: absolute;
-        margin-top: 17rem;
+        margin-top: 4rem;
+    }
+    h3 {
+        color: @lightblue;
+        font-size: 2.75rem;
+    }
+    p {
+        box-sizing: border-box;
+        padding: 2rem 0;
+        max-width: 400px;
     }
 }
 

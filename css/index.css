@@ -168,14 +168,14 @@ img {
   height: auto;
 }
 .wrapper {
-  background-color: whitesmoke;
+  background-color: #A6806A;
   background-image: url("/imgs/assets/background.jpg");
   height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: device-width;
   margin: 0 auto;
+  padding: 3%;
 }
 .main {
   max-width: 800px;
@@ -185,23 +185,27 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  margin: 1rem;
 }
 .indexNav .navCTAButton {
-  box-sizing: border-box;
-  width: 10rem;
-  height: 3.5rem;
-  border-radius: 5px;
-  border: 1px groove #593B2A;
-  padding: 0.75rem;
-  background: #89BAD9;
+  display: none;
 }
-.indexNav .navCTAButton a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-.indexNav .navCTAButton :hover {
-  font-weight: bold;
+@media (min-width: 800px) {
+  .indexNav .navCTAButton {
+    display: block;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    border: 1px groove #593B2A;
+    padding: 0.75rem;
+    background: #89BAD9;
+  }
+  .indexNav .navCTAButton a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .indexNav .navCTAButton:hover {
+    font-weight: bold;
+  }
 }
 .indexNavMenu {
   display: block;
@@ -259,6 +263,19 @@ img {
 .indexDropDown li:hover {
   background: whitesmoke;
 }
+@media (min-width: 800px) {
+  .wrapper.home .mobile {
+    display: none;
+  }
+}
+.wrapper.home .desktop {
+  display: none;
+}
+@media (min-width: 800px) {
+  .wrapper.home .desktop {
+    display: block;
+  }
+}
 .about nav {
   display: flex;
   justify-content: space-between;
@@ -266,7 +283,7 @@ img {
   flex-flow: row;
   margin-right: 1.55rem;
 }
-.logo {
+.about .logo {
   width: auto;
   height: 11rem;
   padding-top: 0.7rem;

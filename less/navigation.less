@@ -1,21 +1,24 @@
 .indexNav {
   .flex(space-between, center, row);
-  margin: 1rem;
+  
 
   .navCTAButton {
-    box-sizing: border-box;
-    width: 10rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    border: 1px groove @darkbrown;
-    padding: 0.75rem;
-    background: @lightblue;
-    a {
-      text-decoration: none;
-      color: whitesmoke;
-    }
-    :hover {
-      font-weight: bold;
+    display: none;
+    @media @desktop {
+      display: block;
+      width: 10rem;
+      height: 3.5rem;
+      border-radius: 5px;
+      border: 1px groove @darkbrown;
+      padding: 0.75rem;
+      background: @lightblue;
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -69,10 +72,11 @@
   a {
     text-decoration: none;
     color: whitesmoke;
-  
-  &:hover {
-    color: @lightblue;
-  }}
+
+    &:hover {
+      color: @lightblue;
+    }
+  }
 }
 .indexDropDown li:hover {
   background: whitesmoke;

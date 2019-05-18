@@ -143,6 +143,7 @@ h4,
 h5 {
   font-family: 'Optima', sans-serif;
   color: whitesmoke;
+  text-shadow: #593B2A 2px 2px 2px;
 }
 h1 {
   font-size: 4rem;
@@ -151,7 +152,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
@@ -298,7 +302,7 @@ img {
   text-decoration: none;
   color: whitesmoke;
   text-shadow: #593B2A 1px 1px 1px;
-  font: normal normal bold 27px arial;
+  font-size: 2.5rem;
 }
 .wrapper.home .cta-btn:hover,
 .wrapper.home .cta-btn:focus {

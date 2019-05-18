@@ -292,7 +292,7 @@ h1 {
   font-weight: bold;
 }
 .about {
-  height: 28rem;
+  height: 35rem;
 }
 .mainAbout {
   display: flex;
@@ -308,7 +308,15 @@ h1 {
   padding-top: 0.8rem;
   color: #A6806A;
   background: whitesmoke;
-  border: 2px double #593B2A;
+  border: 2px solid #593B2A;
+  border-radius: 8px;
+}
+.member {
+  margin: 4rem;
+  margin-top: 0;
+}
+.member img {
+  border: 1px solid whitesmoke;
   border-radius: 8px;
 }
 .navMenu {

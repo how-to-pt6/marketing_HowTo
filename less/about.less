@@ -56,24 +56,37 @@
 .member {
     margin: 4rem;
     margin-top: 0;
-    img {
+    .flex(center,center,column);
+    .portrait {
         border: 1px solid whitesmoke;
         border-radius: 8px;
+        box-shadow: 5px 5px 15px 6px rgb(51, 51, 51)
+    }
+    ul {.flex(space-between,center,row);}
+    li {padding-left: 12.9%;}
+    a img{
+        width: 40%;
+    }
+    h2 {
+        position: absolute;
+        margin-top: 17rem;
     }
 }
 
 // Drop down Nav Menu *********
 .navMenu {
     display: block;
+    margin-bottom: 10rem;
     transition-duration: 0.5s;
     :hover {cursor: pointer;}
     background-color: @lightblue;
     width: 5.5rem;
     padding: 0 .7rem;
-    margin: .4rem 0;
     height: auto;
     border-radius: 3px;
     border: 1px groove @darkbrown;
+    position: absolute;
+    left: 4%;
     
 }
 
@@ -82,10 +95,10 @@
     opacity: 0;
     position: absolute;
     transition: all .5s ease;
-    margin-top: 0rem;
-    left: .65rem;
+    left: 0%;
+    margin-right: 15rem;
     display: none;
-    width: auto;
+    width: 5.3rem;
 }
 
 .navMenu:hover > ul,

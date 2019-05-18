@@ -1,6 +1,7 @@
 .about nav {
     .flex(space-between,center,row);
-    margin-right: 1.55rem;
+    margin-left: 0rem;
+    padding-top: 2rem;
 }
 
 .about .logo {
@@ -9,14 +10,20 @@
     padding-top: .7rem;
 }
 
+.aboutPromo {
+    padding: .5rem;
+    font-weight: bolder;
+}
+
 .about nav button {
+    display: none;
     box-sizing: border-box;
     width: 10rem;
     height: 3.5rem;
     border-radius: 5px;
     border: 1px groove @darkbrown;
     padding: .75rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
     background: @lightblue;
     a {
         text-decoration: none;
@@ -24,46 +31,102 @@
     }
     :hover {
         font-weight: bold;
-    }  
+    }
 }
 
 .about {
-    height: 28rem;
+    height: 35rem;
 }
 
 .mainAbout {
     .flex(center,center,column);
     h1 {
-        height: 20rem;
-        margin-top: 20rem;
-        // color: 
+        height: 6rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        padding: 1rem;
+        padding-top: .8rem;
+        color: @lightbrown;
+        background: whitesmoke;
+        border: 2px solid @darkbrown;
+        border-radius: 8px;
     }
+}
+
+.member {
+    margin: 4rem;
+    margin-top: 0;
+    margin-bottom: 8rem;
+    max-height: 900vw;
+    .flex(center,center,column);
+    .portrait {
+        max-width: 38rem;
+        border: 1px solid whitesmoke;
+        border-radius: 8px;
+        box-shadow: 5px 5px 15px 6px rgb(51, 51, 51)
+    }
+    ul {
+        .flex(space-between,center,row);
+        max-width: 34rem;
+    }
+    li {padding-left: 12.9%;}
+    a img{
+        width: 40%;
+        
+    }
+    a img:hover {
+            opacity: .5;
+        }
+    h2 {
+        position: absolute;
+        margin-top: 4rem;
+    }
+    h3 {
+        color: @lightblue;
+        font-size: 2.75rem;
+    }
+    p {
+        box-sizing: border-box;
+        padding: 2rem 0;
+        max-width: 400px;
+    }
+}
+
+footer {
+    .flex(center,center,row);
+    padding: 2rem;
+    width: 100%;
+    background-color: @lightblue;
 }
 
 // Drop down Nav Menu *********
 .navMenu {
     display: block;
+    padding-bottom: 10rem;
     transition-duration: 0.5s;
     :hover {cursor: pointer;}
     background-color: @lightblue;
     width: 5.5rem;
     padding: 0 .7rem;
-    margin: .4rem 0;
     height: auto;
     border-radius: 3px;
     border: 1px groove @darkbrown;
-    
+    position: absolute;
+    left: 4%;    
 }
-
+.menuContainer {
+    height: 5rem;
+    width: 5rem;
+}
 .dropDown {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     transition: all .5s ease;
-    margin-top: 0rem;
-    right: .8rem;
+    left: 0%;
+    margin-right: 15rem;
     display: none;
-    width: auto;
+    width: 5.3rem;
 }
 
 .navMenu:hover > ul,

@@ -201,7 +201,7 @@ img {
     border-radius: 5px;
     border: 1px groove #593B2A;
     padding: 0.75rem;
-    background: #89BAD9;
+    background: #89bad9;
   }
   .indexNav .navCTAButton a {
     text-decoration: none;
@@ -214,7 +214,7 @@ img {
 .indexNavMenu {
   display: block;
   transition-duration: 0.5s;
-  background-color: #89BAD9;
+  background-color: #89bad9;
   width: 5.5rem;
   padding: 0 0.7rem;
   margin: 0.4rem 0;
@@ -231,7 +231,7 @@ img {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 0rem;
-  left: 0.31rem;
+  left: 0.65rem;
   display: none;
   width: auto;
 }
@@ -252,7 +252,7 @@ img {
   text-align: center;
   padding: 0.25rem;
   padding-bottom: 2rem;
-  background: #89BAD9;
+  background: #89bad9;
   border-radius: 4px;
   margin: 0.5rem;
   border: 1px solid #593B2A;
@@ -262,7 +262,7 @@ img {
   color: whitesmoke;
 }
 .indexDropDown li a:hover {
-  color: #89BAD9;
+  color: #89bad9;
 }
 .indexDropDown li:hover {
   background: whitesmoke;
@@ -323,22 +323,28 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  margin-right: 1.55rem;
+  margin-left: 0rem;
+  padding-top: 2rem;
 }
 .about .logo {
   width: auto;
   height: 11rem;
   padding-top: 0.7rem;
 }
+.aboutPromo {
+  padding: 0.5rem;
+  font-weight: bolder;
+}
 .about nav button {
+  display: none;
   box-sizing: border-box;
   width: 10rem;
   height: 3.5rem;
   border-radius: 5px;
   border: 1px groove #593B2A;
   padding: 0.75rem;
-  margin-right: 2rem;
-  background: #89BAD9;
+  margin-right: 0rem;
+  background: #89bad9;
 }
 .about nav button a {
   text-decoration: none;
@@ -348,7 +354,7 @@ img {
   font-weight: bold;
 }
 .about {
-  height: 28rem;
+  height: 35rem;
 }
 .mainAbout {
   display: flex;
@@ -357,32 +363,99 @@ img {
   flex-flow: column;
 }
 .mainAbout h1 {
-  height: 20rem;
-  margin-top: 20rem;
+  height: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  padding-top: 0.8rem;
+  color: #A6806A;
+  background: whitesmoke;
+  border: 2px solid #593B2A;
+  border-radius: 8px;
+}
+.member {
+  margin: 4rem;
+  margin-top: 0;
+  margin-bottom: 8rem;
+  max-height: 900vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.member .portrait {
+  max-width: 38rem;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 6px #333333;
+}
+.member ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  max-width: 34rem;
+}
+.member li {
+  padding-left: 12.9%;
+}
+.member a img {
+  width: 40%;
+}
+.member a img:hover {
+  opacity: 0.5;
+}
+.member h2 {
+  position: absolute;
+  margin-top: 4rem;
+}
+.member h3 {
+  color: #89bad9;
+  font-size: 2.75rem;
+}
+.member p {
+  box-sizing: border-box;
+  padding: 2rem 0;
+  max-width: 400px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  padding: 2rem;
+  width: 100%;
+  background-color: #89bad9;
 }
 .navMenu {
   display: block;
+  padding-bottom: 10rem;
   transition-duration: 0.5s;
-  background-color: #89BAD9;
+  background-color: #89bad9;
   width: 5.5rem;
   padding: 0 0.7rem;
-  margin: 0.4rem 0;
   height: auto;
   border-radius: 3px;
   border: 1px groove #593B2A;
+  position: absolute;
+  left: 4%;
 }
 .navMenu :hover {
   cursor: pointer;
+}
+.menuContainer {
+  height: 5rem;
+  width: 5rem;
 }
 .dropDown {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 0rem;
-  right: 0.8rem;
+  left: 0%;
+  margin-right: 15rem;
   display: none;
-  width: auto;
+  width: 5.3rem;
 }
 .navMenu:hover > ul,
 .navMenu:focus-within > ul,
@@ -401,7 +474,7 @@ img {
   text-align: center;
   padding: 0.25rem;
   padding-bottom: 2rem;
-  background: #89BAD9;
+  background: #89bad9;
   border-radius: 4px;
   margin: 0.5rem;
   border: 1px solid #593B2A;
@@ -411,7 +484,7 @@ img {
   color: whitesmoke;
 }
 .dropDown li :hover {
-  color: #89BAD9;
+  color: #89bad9;
 }
 .dropDown li:hover {
   background: whitesmoke;

@@ -1,89 +1,100 @@
-nav.mobile {
-  .flex(space-between, center, row);
-  .navCTAButton {
-    display: block;
-    width: 10rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    border: 1px groove @darkbrown;
-    padding: 0.75rem;
-    background: @orange;
-    a {
-      text-decoration: none;
-      color: whitesmoke;
+nav {
+  &.mobile {
+    @media@desktop {
+      display: none;
     }
-    &:hover {
-      font-weight: bold;
-    }
-  }
-}
+    .flex(space-between, center, row);
 
-.indexNavMenu {
-  
-  position: fixed;
-  left: 2.5;
-  top: 3;
-  width: 8rem;
-  margin-top: -2.5rem;
+    .indexNavMenu {
+      position: fixed;
+      left: 2.5;
+      top: 3;
+      width: 8rem;
+      margin-top: -2.5rem;
 
-  display: block;
-  transition-duration: 0.5s;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 5.5rem;
-  padding: 0 0.7rem;
-  height: auto;
-  border-radius: 3px;
-  border: 1px groove @darkbrown;
-  &:hover {
-    cursor: pointer;
-    > ul {
-      visibility: visible;
-      opacity: 1;
-      .flex(center, center, column);
-    }
-  }
-  &:focus-within > ul {
-    visibility: visible;
-    opacity: 1;
-    .flex(center, center, column);
-  }
-}
-
-.indexDropDown {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease;
-  margin-top: 0rem;
-  left: 0.65rem;
-  display: none;
-  width: auto;
-  li {
-    clear: both;
-    width: 6rem;
-    height: 2rem;
-    text-align: center;
-    padding: 0.25rem;
-    padding-bottom: 2rem;
-    background: @lightblue;
-    border-radius: 4px;
-    margin: 0.5rem;
-    border: 1px solid @darkbrown;
-    &:hover {
-      background: whitesmoke;
-      visibility: visible;
-      opacity: 1;
-      .flex(center, center, column);
-    }
-    a {
-      text-decoration: none;
-      color: whitesmoke;
-
+      display: block;
+      transition-duration: 0.5s;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 5.5rem;
+      padding: 0 0.7rem;
+      height: auto;
+      border-radius: 3px;
+      border: 1px groove @darkbrown;
       &:hover {
-        color: @lightblue;
+        cursor: pointer;
+        > ul {
+          visibility: visible;
+          opacity: 1;
+          .flex(center, center, column);
+        }
+      }
+      &:focus-within > ul {
+        visibility: visible;
+        opacity: 1;
+        .flex(center, center, column);
+      }
+    }
+
+    .indexDropDown {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+      margin-top: 0rem;
+      left: 0.65rem;
+      display: none;
+      width: auto;
+      li {
+        clear: both;
+        width: 6rem;
+        height: 2rem;
+        text-align: center;
+        padding: 0.25rem;
+        padding-bottom: 2rem;
+        background: @lightblue;
+        border-radius: 4px;
+        margin: 0.5rem;
+        border: 1px solid @darkbrown;
+        &:hover {
+          background: whitesmoke;
+          visibility: visible;
+          opacity: 1;
+          .flex(center, center, column);
+        }
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+
+          &:hover {
+            color: @lightblue;
+          }
+        }
       }
     }
   }
-}
-nav.desktop {
-  .flex(space-around, center, row;);
+  &.desktop {
+    display: none;
+    @media @desktop {
+      .flex(space-around, center, row);
+      a {
+        font-size: 2.5rem;
+      }
+      .navCTAButton {
+        display: block;
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: 1px groove @darkbrown;
+        padding: 0.75rem;
+        background: @orange;
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-size: 1.6rem;
+        }
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

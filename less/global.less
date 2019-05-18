@@ -39,7 +39,11 @@ h6 {
 }
 
 a {
+  text-decoration: none;
   font-size: 1.6rem;
+  font-family: "Optima", sans-serif;
+  color: whitesmoke;
+  text-shadow: @darkbrown 2px 2px 2px;
 }
 
 p {
@@ -63,15 +67,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-}
-.mobile {
-  @media @desktop {
-    display: none;
-  }
-}
-.desktop {
-  display: none;
-  @media @desktop {
-    display: block;
+  @media @desktop{
+    height: 500px;
   }
 }

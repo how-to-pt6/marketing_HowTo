@@ -326,6 +326,9 @@ footer {
 .cards .next {
   max-width: 20%;
 }
+.cards picture img {
+  padding: 20px 5px;
+}
 .wrapper.home .cta {
   display: flex;
   justify-content: center;
@@ -392,7 +395,7 @@ footer {
   padding: 0 5%;
 }
 .wrapper.home .main .product h3 {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #593B2A;
   text-shadow: none;
 }

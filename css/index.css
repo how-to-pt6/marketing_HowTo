@@ -317,14 +317,14 @@ footer {
 }
 .cards {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-flow: row;
   width: 100%;
 }
-.cards .card img {
-  min-width: 95%;
-  height: auto;
+.cards .back,
+.cards .next {
+  max-width: 20%;
 }
 .wrapper.home .cta {
   display: flex;

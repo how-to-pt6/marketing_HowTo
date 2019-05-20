@@ -9,7 +9,13 @@
   <body>
     <div class="wrapper home">
       <header>
-        <nav class="indexNav">
+        <nav class="desktop">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Contact</a>
+          <button class="navCTAButton"><a href="#">Sign in </a></button>
+        </nav>
+        <nav class="mobile">
           <ul>
             <li class="indexNavMenu">
               <img class="navMenuIcon" src="/imgs/assets/mobile menu.png" />
@@ -21,16 +27,11 @@
             </li>
           </ul>
           <h1 class="mobile">HowTo anything!</h1>
-          <button class="navCTAButton"><a href="#">Sign Up</a></button>
         </nav>
       </header>
       <section class="main">
         <section class="cta">
-          <img
-            class="logo"
-            src="imgs\assets\Logo.png"
-            alt="how to logo."
-          />
+          <img class="logo" src="imgs\assets\Logo.png" alt="how to logo." />
           <div class="cta-text">
             <h1 class="desktop">HowTo anything!</h1>
             <div class="cta-btn"><a href="#">Sign up Now</a></div>
@@ -58,28 +59,35 @@
           </p>
         </section>
         <!--product-->
-        <section class="features">
-          <div class="cards">
-            <div class="card">
-              <img src="\imgs\assets\sign up.png" alt="easy sign up" />
-              <p>Easy Sign Up</p>
+        <section class="cards">
+          <picture>
+            <div class="mobile">
+              <img class="back " alt="back" src="imgs\assets\back.png" />
+              <img class="card" src="imgs\assets\twitter.png" />
+              <p></p>
+              <img class="next" alt="next" src="imgs\assets\next.png" />
             </div>
-            <div class="card">
-              <img src="\imgs\assets\vote.png" alt="your dad approves" />
-              <p>Vote for the Best Content</p>
+            <div class="desktop">
+              <div>
+                <img src="imgs\assets\sign up.png"/>
+                <p>Quick sign up</p>
+              </div>
+              <div>
+                <img src="imgs\assets\search.png"/>
+                <p>Easy search function</p>
+              </div>
+              <div>
+                <img src="imgs\assets\video.png"/>
+                <p>Upload videos and photos</p>
+              </div>
+              <div> 
+                <img src="imgs\assets\vote.png"/>
+                <p>Vote for the best content</p>
+              </div>
             </div>
-            <div class="card">
-              <img src="\imgs\assets\video.png" alt="video-play icon" />
-              <p>Upload Videos</p>
-            </div>
-            <div class="card">
-              <img src="\imgs\assets\search.png" alt="magnifing-glass icon" />
-              <p>Quickly Search Tutorials</p>
-            </div>
-          </div>
-          <!--cards-->
+          </picture>
         </section>
-        <!--features-->
+        <!--cards-->
       </section>
       <!--main-->
       <footer>

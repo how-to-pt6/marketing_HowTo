@@ -1,10 +1,30 @@
-.features{
-    .flex(center,center,row wrap);
-.cards{
-    .flex(center,stretch,row wrap);
-    .card {
-    width: 90%;
-    height: auto;
-}
-}
+.cards {
+  width: 100%;
+  picture {
+    .mobile {
+      .flex(center, center, row);
+      img.card{
+        padding:3%;
+      }
+      .back,
+      .next {
+        max-width: 20%;
+      }
+      padding: 30px 5px 20px;
+      @media @desktop {
+        display: none;
+      }
+    }
+    .desktop {
+      .flex(space-around, center, row-wrap);
+      div {
+        max-width: 40%;
+        .flex(center, center, column);
+        padding: 3%;
+        img {
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
 }

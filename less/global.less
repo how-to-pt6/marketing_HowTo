@@ -1,17 +1,25 @@
 * {
   box-sizing: border-box;
+  max-width: 100%;
+  
 }
 
 html {
   font-size: 62.5%;
+  background-color: whitesmoke;
 }
 
-html, body {
-  font-family: 'Cambria', serif;
+html,
+body {
+  font-family: "Cambria", serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Optima', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Optima", sans-serif;
   color: whitesmoke;
   text-shadow: @darkbrown 2px 2px 2px;
 }
@@ -25,18 +33,25 @@ h2 {
   padding-bottom: 10px;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 2.5rem;
   padding-bottom: 10px;
-} 
+}
 
 a {
-  font-size: 1.6rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Optima", sans-serif;
+  color: whitesmoke;
+  text-shadow: @darkbrown 2px 2px 2px;
 }
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 
@@ -46,16 +61,16 @@ img {
 }
 
 .wrapper {
+  padding: 3%;
+
+  height: 300px;
   background-color: @lightbrown;
   background-image: url("/imgs/assets/background.jpg");
-  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   margin: 0 auto;
-  padding: 3%;
-}
-
-.main{
-  max-width: 800px;
+  @media @desktop{
+    height: 500px;
+  }
 }

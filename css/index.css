@@ -163,14 +163,14 @@ h6 {
 }
 a {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: "Optima", sans-serif;
   color: whitesmoke;
   text-shadow: #593B2A 2px 2px 2px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -316,18 +316,43 @@ footer {
   background-color: #89bad9;
 }
 .cards {
+  width: 100%;
+}
+.cards picture .mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  width: 100%;
+  padding: 30px 5px 20px;
 }
-.cards .back,
-.cards .next {
+.cards picture .mobile img.card {
+  padding: 3%;
+}
+.cards picture .mobile .back,
+.cards picture .mobile .next {
   max-width: 20%;
 }
-.cards picture img {
-  padding: 20px 5px;
+@media (min-width: 800px) {
+  .cards picture .mobile {
+    display: none;
+  }
+}
+.cards picture .desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row-wrap;
+}
+.cards picture .desktop div {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 3%;
+}
+.cards picture .desktop div img {
+  margin-bottom: 5%;
 }
 .wrapper.home .cta {
   display: flex;

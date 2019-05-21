@@ -22,7 +22,7 @@
     padding: 0.5rem;
     font-weight: bolder;
   }
-  
+
   .navCTAButton {
         display: block;
         width: 10rem;
@@ -53,6 +53,22 @@
       border: 2px solid @darkbrown;
       border-radius: 8px;
     }
+    @media@desktop {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        h1 {
+          width: 100%;
+          text-align: center;
+          margin: 5rem 20rem 4rem 20rem;
+        }
+        .member {
+          width: 40%;
+          align-self: baseline;
+        }
+        .tjHeading {
+          margin-top: 6rem;
+        }
+    }
   }
 
   .member {
@@ -82,7 +98,7 @@
     }
     h2 {
       position: absolute;
-      margin-top: 4rem;
+      padding-bottom: 11rem;
     }
     h3 {
       color: @lightblue;

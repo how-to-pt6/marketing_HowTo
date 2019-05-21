@@ -1,10 +1,16 @@
 .about {
   height: 35rem;
-  nav {
+  .desktop {
     .flex(space-between, center, row);
+    display: none;
     margin-left: 0rem;
     padding-top: 2rem;
   }
+    @media @tablet {
+        .desktop {
+            display: flex;
+        }
+    }
 
   .logo {
     width: auto;
@@ -17,25 +23,23 @@
     font-weight: bolder;
   }
 
-  nav button {
-    display: none;
-    box-sizing: border-box;
-    width: 10rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    border: 1px groove @darkbrown;
-    padding: 0.75rem;
-    margin-right: 0rem;
-    background: @lightblue;
-    a {
-      text-decoration: none;
-      color: whitesmoke;
-    }
-    :hover {
-      font-weight: bold;
-    }
-  }
-
+  .navCTAButton {
+        display: block;
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: 1px groove @darkbrown;
+        padding: 0.75rem;
+        background: @orange;
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-size: 1.6rem;
+        }
+        &:hover {
+          font-weight: bold;
+        }
+      }
   .mainAbout {
     .flex(center, center, column);
     h1 {
@@ -48,6 +52,22 @@
       background: whitesmoke;
       border: 2px solid @darkbrown;
       border-radius: 8px;
+    }
+    @media@desktop {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        h1 {
+          width: 100%;
+          text-align: center;
+          margin: 5rem 20rem 4rem 20rem;
+        }
+        .member {
+          width: 40%;
+          align-self: baseline;
+        }
+        .tjHeading {
+          margin-top: 6rem;
+        }
     }
   }
 
@@ -78,7 +98,7 @@
     }
     h2 {
       position: absolute;
-      margin-top: 4rem;
+      padding-bottom: 11rem;
     }
     h3 {
       color: @lightblue;
@@ -92,6 +112,9 @@
   }
 
   // Drop down Nav Menu *********
+  @media@tablet {
+      .mobile {display: none;}
+  }
   .navMenu {
     display: block;
     padding-bottom: 10rem;

@@ -180,7 +180,7 @@ img {
 .wrapper {
   padding: 3%;
   height: 300px;
-  background-color: #A6806A;
+  background-color: #a6806a;
   background-image: url("/imgs/assets/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -440,13 +440,19 @@ footer {
 .about {
   height: 35rem;
 }
-.about nav {
+.about .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
+  display: none;
   margin-left: 0rem;
   padding-top: 2rem;
+}
+@media (min-width: 500px) {
+  .about .desktop {
+    display: flex;
+  }
 }
 .about .logo {
   width: auto;
@@ -457,22 +463,21 @@ footer {
   padding: 0.5rem;
   font-weight: bolder;
 }
-.about nav button {
-  display: none;
-  box-sizing: border-box;
+.about .navCTAButton {
+  display: block;
   width: 10rem;
   height: 3.5rem;
   border-radius: 5px;
   border: 1px groove #593B2A;
   padding: 0.75rem;
-  margin-right: 0rem;
-  background: #89bad9;
+  background: #D98B48;
 }
-.about nav button a {
+.about .navCTAButton a {
   text-decoration: none;
   color: whitesmoke;
+  font-size: 1.6rem;
 }
-.about nav button :hover {
+.about .navCTAButton:hover {
   font-weight: bold;
 }
 .about .mainAbout {
@@ -487,10 +492,28 @@ footer {
   margin-bottom: 4rem;
   padding: 1rem;
   padding-top: 0.8rem;
-  color: #A6806A;
+  color: #a6806a;
   background: whitesmoke;
   border: 2px solid #593B2A;
   border-radius: 8px;
+}
+@media (min-width: 800px) {
+  .about .mainAbout {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .about .mainAbout h1 {
+    width: 100%;
+    text-align: center;
+    margin: 5rem 20rem 4rem 20rem;
+  }
+  .about .mainAbout .member {
+    width: 40%;
+    align-self: baseline;
+  }
+  .about .mainAbout .tjHeading {
+    margin-top: 6rem;
+  }
 }
 .about .member {
   margin: 4rem;
@@ -526,7 +549,7 @@ footer {
 }
 .about .member h2 {
   position: absolute;
-  margin-top: 4rem;
+  padding-bottom: 11rem;
 }
 .about .member h3 {
   color: #89bad9;
@@ -536,6 +559,11 @@ footer {
   box-sizing: border-box;
   padding: 2rem 0;
   max-width: 400px;
+}
+@media (min-width: 500px) {
+  .about .mobile {
+    display: none;
+  }
 }
 .about .navMenu {
   display: block;

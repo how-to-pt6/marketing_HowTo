@@ -18,7 +18,7 @@ const mobileNext = document.querySelector(".cards .mobile .next");
 const mobileBack = document.querySelector(".cards .mobile .back");
 
 const current = 0;
-if ((current = cards.length - 1)) {
+if ((current = cards.length)) {
   current = 0;
 }
 next = () => {

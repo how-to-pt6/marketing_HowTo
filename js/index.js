@@ -12,3 +12,24 @@ const cards = [
   (vote = new Card(`"imgs\assets\vote.png"`, `Vote for the best content`)))
 ];
 
+const mobileImg = document.querySelector(".cards .mobile .card");
+const mobileP = document.querySelector(".cards .mobile p");
+const mobileNext = document.querySelector(".cards .mobile .next");
+const mobileBack = document.querySelector(".cards .mobile .back");
+
+const current = 0;
+if ((current = cards.length - 1)) {
+  current = 0;
+}
+next = () => {
+  current += 1;
+};
+back = () => {
+  current -= 1;
+};
+
+mobileImg.setAttribute(src, `${cards[current].img}`);
+mobileP.innerHTML = `${cards[current].p}`;
+
+mobileNext.addEventListener("click", next());
+mobileBack.addEventListener("click", back());

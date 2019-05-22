@@ -20,11 +20,13 @@ window.addEventListener("load", function() {
 
   let count = 0;
 
-  mobileNext.onclick = function() {
-    return (count = count + 1);
+  mobileNext.onclick = () => {
+    count += 1;
+    return count;
   };
-  mobileBack.onclick = function() {
-    return (count = count - 1);
+  mobileBack.onclick = () => {
+    count -= 1;
+    return count;
   };
 
   if (count == cards.length) {

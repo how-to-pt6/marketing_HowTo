@@ -13,9 +13,9 @@ window.addEventListener("load", function() {
     (vote = new Card(`imgs/assets/vote.png`, `Vote for the best content`)))
   ];
 
-  const mobileImg = document.querySelector(".cards .mobile .card");
+  const mobileImg = document.querySelector(".cards .card img");
   console.log(mobileImg);
-  const mobileP = document.querySelector(".cards .mobile p");
+  const mobileP = document.querySelector(".cards .card p");
   const mobileNext = document.querySelector(".cards .mobile .next");
   const mobileBack = document.querySelector(".cards .mobile .back");
 
@@ -23,19 +23,13 @@ window.addEventListener("load", function() {
   if (current == cards.length) {
     current = 0;
   }
-  // next = () => {
-  //   current += 1;
-  // };
-  // back = () => {
-  //   current -= 1;
-  // };
 
-  mobileImg.setAttribute('src', `${cards[current].img}`);
+  mobileImg.src = `${cards[current].img}`;
   mobileP.textContent = `${cards[current].p}`;
 
-  // mobileNext.addEventListener("click", () => {
-  //   current += 1});
-  // mobileBack.addEventListener("click", () => {
-  //   current -= 1;
-  // });
+  mobileNext.addEventListener("click", () => {
+    current += 1});
+  mobileBack.addEventListener("click", () => {
+    current -= 1;
+  });
 });

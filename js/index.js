@@ -17,19 +17,22 @@ const mobileP = document.querySelector(".cards .mobile p");
 const mobileNext = document.querySelector(".cards .mobile .next");
 const mobileBack = document.querySelector(".cards .mobile .back");
 
-const current = 0;
-if ((current = cards.length)) {
+let current = 0;
+if ((current == cards.length)) {
   current = 0;
 }
-next = () => {
-  current += 1;
-};
-back = () => {
-  current -= 1;
-};
+// next = () => {
+//   current += 1;
+// };
+// back = () => {
+//   current -= 1;
+// };
 
 mobileImg.setAttribute(src, `${cards[current].img}`);
-mobileP.innerHTML = `${cards[current].p}`;
+mobileP.textContent = `${cards[current].p}`;
 
-mobileNext.addEventListener("click", next());
-mobileBack.addEventListener("click", back());
+mobileNext.addEventListener("click", () => {
+  current += 1});
+mobileBack.addEventListener("click", () => {
+  current -= 1;
+});

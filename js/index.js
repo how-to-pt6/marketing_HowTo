@@ -18,7 +18,7 @@ const mobileNext = document.querySelector(".cards .mobile .next");
 const mobileBack = document.querySelector(".cards .mobile .back");
 
 let current = 0;
-if ((current == cards.length)) {
+if (current == cards.length) {
   current = 0;
 }
 // next = () => {
@@ -32,7 +32,8 @@ mobileImg.setAttribute(src, `${cards[current].img}`);
 mobileP.textContent = `${cards[current].p}`;
 
 mobileNext.addEventListener("click", () => {
-  current += 1});
+  current += 1;
+});
 mobileBack.addEventListener("click", () => {
   current -= 1;
 });

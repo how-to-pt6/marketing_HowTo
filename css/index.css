@@ -325,8 +325,16 @@ footer {
   flex-flow: row;
   padding: 30px 5px 20px;
 }
-.cards picture .mobile img.card {
+.cards picture .mobile .card {
   padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.cards picture .mobile .card p {
+  font-size: 2.6rem;
+  padding: 10px 0;
 }
 .cards picture .mobile .back,
 .cards picture .mobile .next {

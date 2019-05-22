@@ -21,14 +21,8 @@ let current = 0;
 if (current == cards.length) {
   current = 0;
 }
-// next = () => {
-//   current += 1;
-// };
-// back = () => {
-//   current -= 1;
-// };
 
-mobileImg.setAttribute(src, `${cards[current].img}`);
+mobileImg.src = (`${cards[current].img}`);
 mobileP.textContent = `${cards[current].p}`;
 
 mobileNext.addEventListener("click", () => {

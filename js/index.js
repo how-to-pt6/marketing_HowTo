@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+window.onload = function() {
   class Card {
     constructor(img, p) {
       this.img = img;
@@ -22,17 +22,30 @@ window.addEventListener("load", function() {
 
   mobileNext.onclick = () => {
     count += 1;
-    return count;
-  };
-  mobileBack.onclick = () => {
-    count -= 1;
+    if (count >= cards.length) {
+      count = 0;
+    } else if (count < 0) {
+      count = cards.length - 1;
+    }
+    mobileImg.src = `${cards[count].img}`;
+    mobileP.textContent = `${cards[count].p}`;
+
     return count;
   };
 
-  if (count == cards.length) {
-    count = 0;
-  }
+  mobileBack.onclick = () => {
+    count -= 1;
+    if (count >= cards.length) {
+      count = 0;
+    } else if (count < 0) {
+      count = cards.length - 1;
+    }
+    mobileImg.src = `${cards[count].img}`;
+    mobileP.textContent = `${cards[count].p}`;
+
+    return count;
+  };
 
   mobileImg.src = `${cards[count].img}`;
   mobileP.textContent = `${cards[count].p}`;
-});
+};

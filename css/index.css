@@ -522,6 +522,9 @@ footer {
   .about .mainAbout .tjHeading {
     margin-top: 6rem;
   }
+  .about .mainAbout .annaHeading {
+    margin-top: 39rem;
+  }
 }
 .about .member {
   margin: 4rem;
@@ -535,6 +538,7 @@ footer {
 }
 .about .member .portrait {
   max-width: 38rem;
+  margin-bottom: 4rem;
   border: 1px solid whitesmoke;
   border-radius: 8px;
   box-shadow: 5px 5px 15px 6px #333333;
@@ -557,7 +561,7 @@ footer {
 }
 .about .member h2 {
   position: absolute;
-  padding-bottom: 11rem;
+  padding-bottom: 50rem;
 }
 .about .member h3 {
   color: #89bad9;

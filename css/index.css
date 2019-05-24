@@ -444,6 +444,10 @@ footer {
 }
 .about {
   height: 35rem;
+  flex-flow: column;
+}
+.about nav {
+  max-width: 900px;
 }
 .about .desktop {
   display: flex;
@@ -451,8 +455,8 @@ footer {
   align-items: center;
   flex-flow: row;
   display: none;
-  margin-left: 0rem;
   padding-top: 2rem;
+  margin: auto;
 }
 @media (min-width: 500px) {
   .about .desktop {
@@ -492,6 +496,7 @@ footer {
   flex-flow: column;
 }
 .about .mainAbout h1 {
+  max-width: 650px;
   height: 6rem;
   margin-top: 3rem;
   margin-bottom: 4rem;
@@ -646,6 +651,13 @@ footer {
   background-position: top;
   background-color: white;
 }
+.contact nav {
+  max-width: 900px;
+}
+.contact .mobile {
+  width: 100%;
+  text-align: center;
+}
 .contact .desktop {
   display: flex;
   justify-content: space-between;
@@ -694,6 +706,7 @@ footer {
   margin-top: 5rem;
   width: 50%;
   height: 20%;
+  text-align: center;
 }
 #main h2 {
   font-size: 5rem;
@@ -716,6 +729,27 @@ footer {
   border-radius: 6px;
   font-size: 180%;
   padding: 0.4rem;
+  text-shadow: #593B2A 2px 2px 1px;
+  color: whitesmoke;
+}
+#main .required p {
+  background-color: #89bad9;
+  border: solid 1px black;
+  border-radius: 6px;
+  font-size: 110%;
+  padding: 0.2rem;
+  max-width: 155px;
+  text-align: center;
+  text-shadow: #593B2A 2px 2px 1px;
+  color: whitesmoke;
+}
+#main .third .required {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-flow: row;
 }
 #main input {
   margin-top: 1rem;
@@ -739,4 +773,7 @@ footer {
 #main #submitButton:hover {
   background-color: #c2bfbf;
   border: groove darkgray;
+}
+#main .indexNavMenu {
+  margin-left: 0rem;
 }

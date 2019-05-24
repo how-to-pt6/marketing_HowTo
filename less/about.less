@@ -1,16 +1,18 @@
 .about {
+  nav {max-width: 900px;}
   height: 35rem;
+  flex-flow: column;
   .desktop {
     .flex(space-between, center, row);
     display: none;
-    margin-left: 0rem;
     padding-top: 2rem;
+    margin: auto;
   }
-    @media @tablet {
-        .desktop {
-            display: flex;
-        }
-    }
+  @media @tablet {
+      .desktop {
+          display: flex;
+      }
+  }
 
   .logo {
     width: auto;
@@ -43,6 +45,7 @@
   .mainAbout {
     .flex(center, center, column);
     h1 {
+      max-width: 650px;
       height: 6rem;
       margin-top: 3rem;
       margin-bottom: 4rem;

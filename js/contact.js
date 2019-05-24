@@ -7,14 +7,16 @@ subButton.addEventListener('click', (e) => {
       email = document.querySelector('#email'),
       message = document.querySelector('#message');
 
-  if (name.nodeValue == '' || email.nodeValue == '' || message.nodeValue == '') {
+  if (name.value == '' || email.value == '' || message.value == '') {
     const error = alert('Please fill out all fields.');
     error;
   }
   else {
     // e.preventDefault();
     messages.forEach((input) => {
-      input.nodeValue = 0;
+      input.value = '';
     })
+    alert('Thank you. We will get back to you as soon as we can.');
+
   }
 });

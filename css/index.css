@@ -562,8 +562,8 @@ footer {
   opacity: 0.5;
 }
 .about .member h2 {
-  position: absolute;
-  padding-bottom: 50rem;
+  position: relative;
+  top: -10rem;
 }
 .about .member h3 {
   color: #89bad9;
@@ -643,7 +643,7 @@ footer {
 }
 .contact {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-flow: column;
   height: auto;
@@ -717,7 +717,7 @@ footer {
   width: 70%;
   height: 100%;
   margin: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 #main .row {
@@ -737,7 +737,7 @@ footer {
   border: solid 1px black;
   border-radius: 6px;
   font-size: 110%;
-  padding: 0.2rem;
+  padding: 0.4rem;
   max-width: 155px;
   text-align: center;
   text-shadow: #593B2A 2px 2px 1px;

@@ -745,7 +745,7 @@ footer {
   text-shadow: #593B2A 2px 2px 1px;
   color: whitesmoke;
 }
-#main .third .required {
+#main .required {
   background: none;
   border: none;
   display: flex;

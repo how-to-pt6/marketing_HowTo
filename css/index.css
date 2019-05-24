@@ -666,14 +666,32 @@ footer {
     display: none;
   }
 }
+.contact .navCTAButton {
+  display: block;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: 1px groove #593B2A;
+  padding: 0.75rem;
+  background: #D98B48;
+}
+.contact .navCTAButton a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.6rem;
+}
+.contact .navCTAButton:hover {
+  font-weight: bold;
+}
 #main {
   display: flex;
   justify-content: center;
-  align-items: none;
-  flex-flow: wrap;
+  align-items: center;
+  flex-flow: column;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   border: solid 1px black;
+  margin-top: 5rem;
   width: 50%;
   height: 20%;
 }
@@ -696,7 +714,7 @@ footer {
   background-color: #89bad9;
   border: solid 1px black;
   border-radius: 6px;
-  font-size: 2rem;
+  font-size: 180%;
   padding: 0.4rem;
 }
 #main input {

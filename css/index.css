@@ -520,7 +520,7 @@ footer {
     margin-top: 6rem;
   }
   .about .mainAbout .annaHeading {
-    margin-top: 39rem;
+    margin-top: 75rem;
   }
 }
 .about .member {
@@ -635,4 +635,108 @@ footer {
 }
 .about .dropDown li:hover {
   background: whitesmoke;
+}
+.contact {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-flow: column;
+  height: auto;
+  background-size: 100% 50%;
+  background-position: top;
+  background-color: white;
+}
+.contact .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  display: none;
+  margin-left: 0rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .contact .desktop {
+    display: flex;
+  }
+}
+@media (min-width: 500px) {
+  .contact .mobile {
+    display: none;
+  }
+}
+.contact .navCTAButton {
+  display: block;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: 1px groove #593B2A;
+  padding: 0.75rem;
+  background: #D98B48;
+}
+.contact .navCTAButton a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.6rem;
+}
+.contact .navCTAButton:hover {
+  font-weight: bold;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: solid 1px black;
+  margin-top: 5rem;
+  width: 50%;
+  height: 20%;
+}
+#main h2 {
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+#main #contactForm {
+  width: 70%;
+  height: 100%;
+  margin: 0;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+#main .row {
+  margin: 2rem;
+}
+#main .required {
+  background-color: #89bad9;
+  border: solid 1px black;
+  border-radius: 6px;
+  font-size: 180%;
+  padding: 0.4rem;
+}
+#main input {
+  margin-top: 1rem;
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  height: 3rem;
+}
+#main #message {
+  margin-top: 1rem;
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 0.3rem;
+}
+#main #submitButton {
+  padding: 0 1rem;
+  border-radius: 8px;
+  border: groove;
+  margin-bottom: 5rem;
+}
+#main #submitButton:hover {
+  background-color: #c2bfbf;
+  border: groove darkgray;
 }

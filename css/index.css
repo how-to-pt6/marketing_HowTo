@@ -490,6 +490,8 @@ footer {
   font-weight: bold;
 }
 .about .mainAbout {
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,12 +522,6 @@ footer {
   .about .mainAbout .member {
     width: 40%;
     align-self: baseline;
-  }
-  .about .mainAbout .tjHeading {
-    margin-top: 6rem;
-  }
-  .about .mainAbout .annaHeading {
-    margin-top: 75rem;
   }
 }
 .about .member {
@@ -568,6 +564,12 @@ footer {
 .about .member h3 {
   color: #89bad9;
   font-size: 2.75rem;
+  margin: 2rem 0;
+  box-shadow: 1px 1px 8px black;
+  padding: 0.6rem;
+  padding-top: 0.5rem;
+  border: solid black 1px;
+  border-radius: 8px;
 }
 .about .member p {
   box-sizing: border-box;

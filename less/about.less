@@ -1,16 +1,18 @@
 .about {
+  nav {max-width: 900px;}
   height: 35rem;
+  flex-flow: column;
   .desktop {
     .flex(space-between, center, row);
     display: none;
-    margin-left: 0rem;
     padding-top: 2rem;
+    margin: auto;
   }
-    @media @tablet {
-        .desktop {
-            display: flex;
-        }
-    }
+  @media @tablet {
+      .desktop {
+          display: flex;
+      }
+  }
 
   .logo {
     width: auto;
@@ -41,8 +43,11 @@
     }
   }
   .mainAbout {
+    max-width: 900px;
+    margin: 0 auto;
     .flex(center, center, column);
     h1 {
+      max-width: 650px;
       height: 6rem;
       margin-top: 3rem;
       margin-bottom: 4rem;
@@ -64,12 +69,6 @@
         .member {
           width: 40%;
           align-self: baseline;
-        }
-        .tjHeading {
-          margin-top: 6rem;
-        }
-        .annaHeading {
-          margin-top: 75rem;
         }
     }
   }
@@ -101,12 +100,18 @@
       opacity: 0.5;
     }
     h2 {
-      position: absolute;
-      padding-bottom: 50rem;
+      position: relative;
+      top: -10rem;
     }
     h3 {
       color: @lightblue;
       font-size: 2.75rem;
+      margin: 2rem 0;
+      box-shadow: 1px 1px 8px black;
+      padding: .6rem;
+      padding-top: .5rem;
+      border: solid black 1px;
+      border-radius: 8px;
     }
     p {
       box-sizing: border-box;

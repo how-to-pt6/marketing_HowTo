@@ -16,7 +16,7 @@
             <button class="navCTAButton"><a href="#">Sign Up</a></button>
         </nav>
         <nav class="mobile">
-            <ul>
+            <ul class="hamburger">
                 <li class="indexNavMenu">
                     <img class="navMenuIcon" src="/imgs/assets/mobile menu.png" />
                     <ul class="indexDropDown">
@@ -26,29 +26,31 @@
                     </ul>
                 </li>
             </ul>
-            <h1 class="mobile">HowTo anything!</h1>
+            <button class="navCTAButton"><a href="#">Sign Up</a></button>
         </nav>
         <div id="main">
             <h2>Contact Us</h2>
             <form id="contactForm" action="#" method="POST" enctype="multipart/form-data">
               <div class="first row">
-                <label class="required" for="name">Your name:</label><br>
+                <label class="required" for="name"><p>Your name:</p></label><br>
                 <input id="name" class="input" name="name" type="text" value="" size="30"><br>
                 <span id="name_validation" class="error_message"></span>
               </div>
               <div class="second row">
-                <label class="required" for="email">Your email:</label><br>
+                <label class="required" for="email"><p>Your email:</p></label><br>
                 <input id="email" class="input" name="email" type="text" value="" size="30"><br>
                 <span id="email_validation" class="error_message"></span>
               </div>
               <div class="third row">
-                <label class="required" for="message">Leave a message:</label><br>
+                <label class="required" for="message"><p>Leave a message:</p></label><br>
                 <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br>
                 <span id="message_validation" class="error_message"></span>
               </div>
-              <input id="submitButton" type="submit" value="Send Email">
+              <input id="submitButton" type="button" value="Send Email">
+              <script src="js/contact.js"></script>
             </form>
         </div>
     </div>
+
 </body>
 </html>
